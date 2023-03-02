@@ -1,0 +1,52 @@
+.register-container {
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: center;
+}
+
+.register-form {
+    border-width: 2px;
+    background-color: #FFFFFF;
+    width: 40%;
+    height: 90%;
+    border: 1px solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #1084A8;
+}
+
+.input {
+    border-radius: 5px;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.label {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Rockwell Nova';
+    color: #1084A8;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100px;
+    font-family: 'Rockwell Nova';
+    border-radius: 7px;
+    border-width: 0;
+    background-color: #FFFFFF;
+    border-width: 1px;
+    border-color: #1084A8;
+    color: #1084A8;
+}
+
+.btn:hover {
+    color: #FFFFFF;
+    background-color: #1084A8;
+    border-color: #FFFFFF;
+}
