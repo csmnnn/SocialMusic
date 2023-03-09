@@ -1,45 +1,51 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Register</title>
-        <link rel="stylesheet" href="../css/styles.css">
-    </head>
+<html lang="en">
 
-    <body>
-        <br>
-        <br>
-        <br>
-        <div class="register-container">
-            <div class="register-form">
-                <br>
-                <span style="display: flex; justify-content: center; margin: auto; color: #1084A8; font-family: Rockwell Nova">Register to SocialMusic</span>
-                <br>
-                <form>
-                    <label class="label" for="firstName">First name:</label>
-                    <input class="input" type="text" id="firstName" name="firstName">
-                    <br>
+<head>
+    <title>Register</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
 
-                    <label class="label" for="lastName">Last name:</label>
-                    <input class="input" type="text" id="lastName" name="lastName">
-                    <br>
+<body>
+    <div class="flexbox-register-container">
+        <div class="flexbox-form-container">
+            <p class="flexbox-p-register">Register to SocialMusic</p>
+            <form name="registerForm">
+                <div class="flexbox-form">
+                    <div class="flexbox-input-form-item-name">
+                        <span class="input-span-name" id="span-name"><img src="../resources/img/id-card.png"></span>
+                        <input class="input-item-name" type="text" id="firstName" name="firstName"
+                            placeholder="First Name">
+                        <input class="input-item-name" type="text" id="lastName" name="lastName"
+                            placeholder="Last Name">
+                    </div>
 
-                    <label class="label" for="username">Username:</label>
-                    <input class="input" type="text" id="username" name="username">
-                    <br>
-                    
-                    <label class="label" for="email">Email:</label>
-                    <input class="input" type="email" id="email" name="email">
-                    <br>
+                    <div class="flexbox-input-form-item">
+                        <span class="input-span"><img src="../resources/img/user.png"></span>
+                        <input class="input-item" type="text" id="username" name="username" placeholder="Username">
+                    </div>
 
-                    <label class="label" for="password">Password:</label>
-                    <input class="input" type="password" id="password" name="password">
+                    <div class="flexbox-input-form-item">
+                        <span class="input-span"><img src="../resources/img/email.png"></span>
+                        <input class="input-item" type="email" id="email" name="email" placeholder="Email">
+                    </div>
 
-                    <br>
-                    <button class="btn" type="button">Register</button>
-                    <br>
-                </form>
-            </div>
+                    <div class="flexbox-input-form-item">
+                        <span class="input-span"><img src="../resources/img/password.png"></span>
+                        <input class="input-item" type="password" id="password" name="password" placeholder="Password">
+                    </div>
+
+                    <button class="btn">Register</button>
+
+                </div>
+            </form>
+            <a class="loginLink" href="login.html">Already have an account? Log in here!</span>
+
         </div>
-    </body>
+    </div>
+</body>
 
 </html>
