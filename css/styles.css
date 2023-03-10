@@ -1,0 +1,138 @@
+body {
+    overflow-y: scroll;
+    background-color: #2eaed5;
+}
+
+.flexbox-register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+.flexbox-form-container {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 25%;
+    border: 2px solid #FFFFFF;
+    border-width: 2px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 30px rgb(0, 0, 0);
+}
+
+.flexbox-p-register {
+    height: 10%;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Roboto';
+    color: #FFFFFF;
+}
+
+form[name="registerForm"] {
+    height: 90%;
+}
+
+.flexbox-form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.flexbox-input-form-item {
+    display: flex;
+}
+
+.flexbox-input-form-item-name {
+    display: flex;
+}
+
+.input-item-name {
+    width: 32%;
+    padding: 5px;
+    border: 2px solid #ccc;
+}
+
+#lastName {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.input-span-name {
+    position: static;
+    height: 16px;
+    padding: 7px;
+    border: 2px solid #ccc;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.input-span {
+    position: static;
+    height: 16px;
+    padding: 7px;
+    border: 2px solid #ccc;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.input-item {
+    width: 90%;
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn {
+    align-self: center;
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.btn:hover {
+    background-color: #c8c8c8;
+    border-color: #c8c8c8;
+}
+
+.homepageLink {
+    text-decoration: none;
+    color: black;
+}
+
+.loginLink,
+.registerLink {
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+@media screen {
+
+    .input-item,
+    #lastName {
+        margin-right: 38px;
+    }
+
+    span {
+        margin-left: 38px;
+    }
+
+    button {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+/*TODO*/
+/*Play with media queries and achieve responsiveness on Register and Login pages*/
