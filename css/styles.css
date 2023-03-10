@@ -1,6 +1,6 @@
 body {
     overflow-y: scroll;
-    background-color: #076480;
+    background-color: #2eaed5;
 }
 
 .flexbox-register-container {
@@ -18,7 +18,7 @@ body {
     border: 2px solid #FFFFFF;
     border-width: 2px;
     border-radius: 10px;
-    box-shadow: 10px 5px 20px black;
+    box-shadow: 20px 20px 30px rgb(0, 0, 0);
 }
 
 .flexbox-p-register {
@@ -103,9 +103,15 @@ form[name="registerForm"] {
     border-color: #c8c8c8;
 }
 
-.loginLink {
+.homepageLink {
+    text-decoration: none;
+    color: black;
+}
+
+.loginLink,
+.registerLink {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-decoration: none;
     color: #FFFFFF;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
@@ -128,3 +134,5 @@ form[name="registerForm"] {
     }
 
 }
+/*TODO*/
+/*Play with media queries and achieve responsiveness on Register and Login pages*/
