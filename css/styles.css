@@ -1,6 +1,8 @@
 body {
+    font-family: 'BreezeSans';
     overflow-y: scroll;
     background-color: #2eaed5;
+    margin: 0;
 }
 
 .flexbox-register-container {
@@ -26,7 +28,6 @@ body {
     font-size: 32px;
     font-weight: 700;
     text-align: center;
-    font-family: 'Roboto';
     color: #FFFFFF;
 }
 
@@ -53,6 +54,7 @@ form[name="registerForm"] {
     width: 32%;
     padding: 5px;
     border: 2px solid #ccc;
+    font-family: 'BreezeSans';
 }
 
 #lastName {
@@ -84,6 +86,7 @@ form[name="registerForm"] {
     border: 2px solid #ccc;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    font-family: 'BreezeSans';
 }
 
 .btn {
@@ -91,7 +94,7 @@ form[name="registerForm"] {
     margin-top: 10px;
     width: 100px;
     height: 30px;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-family: 'BreezeSans';
     font-weight: bold;
     border-radius: 5px;
     background-color: #FFFFFF;
@@ -134,5 +137,79 @@ form[name="registerForm"] {
     }
 
 }
+
 /*TODO*/
 /*Play with media queries and achieve responsiveness on Register and Login pages*/
+
+.music-player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8e8e8;
+}
+
+.p-homepage {
+    height: 100%;
+    text-align: center;
+    margin: 0 21%;
+}
+
+.flexbox-homepage-container {
+    display: flex;
+    justify-content: center;
+    height: 100dvh;
+}
+
+.flexbox-homepage-item-1 {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.flexbox-homepage-item-2 {
+    width: 70%;
+    height: 100%;
+}
+
+.flexbox-homepage-item-3 {
+    width: 15%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 0;
+}
+
+.nav-bar-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.homeLink {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 1000;
+    color: #2eaed5;
+    padding: 10% 40%;
+    border-radius: 20px;
+}
+
+.homeLink:hover {
+    text-align: center;
+    background-color: #2eaed5;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.player {
+    width: 100%;
+}
