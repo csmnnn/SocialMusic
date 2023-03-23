@@ -1,7 +1,6 @@
 body {
     font-family: 'BreezeSans', sans-serif, Arial;
-    /* overflow-y: scroll; */
-    background-color: #2eaed5;
+    background-color: #e2d4d47c;
     margin: 0;
 }
 
@@ -18,7 +17,6 @@ body {
     height: 50%;
     width: 25%;
     border: 2px solid #FFFFFF;
-    border-width: 2px;
     border-radius: 10px;
     box-shadow: 20px 20px 30px rgb(0, 0, 0);
 }
@@ -28,7 +26,7 @@ body {
     font-size: 32px;
     font-weight: 700;
     text-align: center;
-    color: #FFFFFF;
+    color: #000000C9;
 }
 
 form[name="registerForm"] {
@@ -116,7 +114,7 @@ form[name="registerForm"] {
     text-align: center;
     margin-bottom: 20px;
     text-decoration: none;
-    color: #FFFFFF;
+    color: #000000C9;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
@@ -146,7 +144,6 @@ form[name="registerForm"] {
     justify-content: center;
     align-items: center;
     height: 6%;
-    background-color: #FFFFFF;
 }
 
 .about-song {
@@ -162,7 +159,9 @@ form[name="registerForm"] {
     height: 100%;
 }
 
-.previous-song, .play-song, .next-song {
+.previous-song,
+.play-song,
+.next-song {
     display: flex;
     align-items: center;
     width: 7%;
@@ -174,7 +173,6 @@ form[name="registerForm"] {
     height: 2.6em;
     color: black;
     text-align: center;
-    border: 1px solid red;
 }
 
 .progress-bar-song::before {
@@ -214,7 +212,8 @@ form[name="registerForm"] {
     height: 100dvh;
 }
 
-.flexbox-homepage-item-1, .flexbox-homepage-item-3 {
+.flexbox-homepage-item-1,
+.flexbox-homepage-item-3 {
     display: flex;
     flex-direction: column;
     width: 15%;
@@ -237,13 +236,13 @@ form[name="registerForm"] {
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
-    background-color: #ccc;
+    width: 5px;
+    background-color: #e3e3e3;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: #979797;   
+    background-color: #b4b4b4;
 }
 
 .nav-bar {
@@ -265,14 +264,15 @@ form[name="registerForm"] {
     text-decoration: none;
     font-size: 24px;
     font-weight: 1000;
-    color: #2eaed5;
+    color: #000000c9;
     padding: 10% 40%;
     border-radius: 20px;
 }
 
-.homeLink:hover, .queue-list-item:hover {
-    background-color: #2eaed5;
-    color: #FFFFFF;
+.homeLink:hover,
+.queue-list-item:hover {
+    background-color: #e2d4d47c;
+    color: #000000c9;
     transition: 0.5s;
 }
 
@@ -313,25 +313,27 @@ form[name="registerForm"] {
     color: #848484;
 }
 
-.song-artist, .song-name {
+.song-artist,
+.song-name {
     text-align: center;
     margin: 2px 0;
     font-size: small;
 }
 
 .queue-list-item:hover .song-artist {
-    color: #FFFFFF;
+    color: #000000c9;
     transition: 0.5s;
 }
 
 hr {
     border: 0;
-    width: 96%;               
-    background-color:#ccc;
+    width: 96%;
+    background-color: #ccc;
     height: 1px;
 }
 
-.section-1, .section-2 {
+.section-1,
+.section-2 {
     padding: 0;
     margin: 5px 10px;
 }
@@ -341,16 +343,13 @@ hr {
 }
 
 .profile {
-    width: 2*inherit;
     height: 94%;
-    /* border: 2px solid green; */
 }
 
 .profile-banner {
     height: 25%;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    /* border: 1px solid red; */
 }
 
 .profile-image {
@@ -377,61 +376,102 @@ hr {
 }
 
 .profile-details {
+    display: flex;
     height: fit-content;
-    width: fit-content;
-    font-size: 36px;
-    font-weight: bold;
-    color: #FFFFFF;
-    /* border: 1px solid brown; */
+    font-size: 28px;
+    color: #000000bb;
     margin-top: -90px;
     margin-left: 320px;
+}
+
+.details {
+    width: 50%;
+}
+
+.profile-settings {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+}
+
+.btn-edit:hover,
+.profile-settings-button:hover {
+    background-color: #cccccc;
+    transition: 0.5s;
 }
 
 .profile-favourites {
     width: inherit;
     height: 56%;
-    /* border: 2px solid lawngreen; */
 }
 
 .details-p {
     margin: 0;
     height: 40px;
     width: fit-content;
-    margin-bottom: 10px;
 }
 
 .heading {
-    color: #FFFFFF;
+    color: #000000c9;
     margin: 3% 0 3% 7%;
 }
 
 .favourites-section {
-    /* overflow-y: scroll; */
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5%;
     height: 100%;
     margin: 0 2%;
-    color: #FFFFFF;
-    /* border: 1px solid red; */
+    color: #000000c9;
 }
 
-.favourite-songs, .favourite-artists, .favourite-albums {
+.favourite-songs,
+.favourite-artists,
+.favourite-albums {
     width: calc(90%/3);
     height: 100%;
-    /* border: 2px solid green; */
+}
+
+.div-test {
+    display: flex;
+    height: 15%;
+    margin-bottom: 15px;
 }
 
 .heading-favourites {
-    height: 15%;
+    height: 100%;
+    font-weight: normal;
     margin: 3% 0 -10px 3%;
 }
 
-.favourite-artists-list, .favourite-songs-list, .favourite-albums-list {
+.div-btn {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-edit {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border-width: thin;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.profile-settings-button {
+    margin: 0 4% 0 0;
+}
+
+.favourite-artists-list,
+.favourite-songs-list,
+.favourite-albums-list {
     display: flex;
     height: 75%;
-    /* border: 2px solid darkblue; */
 }
 
 .favourites-ol {
@@ -441,7 +481,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    list-style-position: inside;
+    list-style-position: none;
     width: 100%;
     gap: 5%;
 }
@@ -450,7 +490,8 @@ hr {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid white;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #bdbdbd;
     height: 75px;
     width: 100%;
 }
