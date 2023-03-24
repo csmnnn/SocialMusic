@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <title>SocialMusic</title>
+    <script src="../js/script.js" defer></script>
 </head>
 
 <body>
@@ -41,7 +42,7 @@
                         </span>
                     </div>
                     <div class="play-song">
-                        <span class="icons">
+                        <span id="spanPlay" class="icons" onclick="playSong()">
                             <img src="../resources/img/play-button.png">
                         </span>
                     </div>
@@ -51,18 +52,113 @@
                         </span>
                     </div>
                     <div class="progress-bar-song" data-label="Progress bar">
-
+                        <p>0:00</p>
+                        <div class="progress-slider" id="progress-slider">
+                            <div class="progress" id="progress"></div>
+                        </div>
+                        <p>1:00:00</p>
                     </div>
                     <div class="volume">
 
                     </div>
+                    <div class="playing-song">
+                        <p class="playing-song-details song-artist">Virtual Self</p>
+                        <p class="playing-song-details song-name">GHOST VOICES</p>
+                    </div>
+                    <div class="like-song">
+                        <span class="icons">
+                            <img src="../resources/img/heart_empty.png">
+                            <!-- <img src="../resources/img/heart_full.png"> -->
+                        </span>
+                    </div>
                 </div>
-                <audio controls class="player" muted hidden>
-                    <source src="../resources/audio/GHOST VOICES (TISOKI FLIP).mp3" type="audio/mpeg">
+                <audio id="music-player" src="../resources/audio/GHOST VOICES (TISOKI FLIP).mp3" type="audio/mpeg"
+                    controls muted hidden>
                 </audio>
             </div>
-            <div class="homepage-feed" style="text-align: center">
-                Home
+            <div class="homepage-feed">
+                <div class="playlist-suggestions">
+                    <div class="heading-section">
+                        <p class="section-name">Suggestions</p>
+                    </div>
+                    <div class="playlist">
+                        <div class="playlist-item">
+                            <div class="playlist-image">
+                                <img class="playlist-image" src="../resources/img/ghost-voices-image.jpg" alt="">
+                            </div>
+                            <div class="playlist-name">
+                                <p class="playlist-name">Playlist name</p>
+                            </div>
+                        </div>
+                        <div class="playlist-item">
+                            <div class="playlist-image">
+                                <img class="playlist-image" src="../resources/img/ghost-voices-image.jpg" alt="">
+                            </div>
+                            <div class="playlist-name">
+                                <p class="playlist-name">Playlist name</p>
+                            </div>
+                        </div>
+                        <div class="playlist-item">
+                            <div class="playlist-image">
+                                <img class="playlist-image" src="../resources/img/ghost-voices-image.jpg" alt="">
+                            </div>
+                            <div class="playlist-name">
+                                <p class="playlist-name">Playlist name</p>
+                            </div>
+                        </div>
+                        <div class="playlist-item">
+                            <div class="playlist-image">
+                                <img class="playlist-image" src="../resources/img/ghost-voices-image.jpg" alt="">
+                            </div>
+                            <div class="playlist-name">
+                                <p class="playlist-name">Playlist name</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="your-playlists">
+                    <div class="heading-section">
+                        <p class="section-name">Your playlists</p>
+                    </div>
+                    <div class="playlist">
+                        <div class="playlist-item">
+                            <div class="playlist-image">
+                                <img class="playlist-image" src="../resources/img/ghost-voices-image.jpg" alt="">
+                                <div class="circle" id="circle">
+                                    <img class="img-test-icon" src="../resources/img/play-button.png" alt="">
+                                </div>
+                            </div>
+                            <div class="playlist-name">
+                                <p class="playlist-name">Playlist name</p>
+                            </div>
+                        </div>
+                        <div class="playlist-item">
+                            <div class="playlist-image">
+                                <img class="playlist-image" src="../resources/img/ghost-voices-image.jpg" alt="">
+                            </div>
+                            <div class="playlist-name">
+                                <p class="playlist-name">Playlist name</p>
+                            </div>
+                        </div>
+                        <div class="playlist-item">
+                            <div class="playlist-image">
+                                <img class="playlist-image" src="../resources/img/ghost-voices-image.jpg" alt="">
+                            </div>
+                            <div class="playlist-name">
+                                <p class="playlist-name">Playlist name</p>
+                            </div>
+                        </div>
+                        <div class="playlist-item">
+                            <div class="playlist-image">
+                                <img class="playlist-image" src="../resources/img/ghost-voices-image.jpg" alt="">
+                            </div>
+                            <div class="playlist-name">
+                                <p class="playlist-name">Playlist name</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="flexbox-homepage-item-3">
