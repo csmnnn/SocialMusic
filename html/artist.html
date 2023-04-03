@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Profile</title>
+    <title>Artist name | SocialMusic</title>
 </head>
 
 <body>
@@ -103,8 +103,8 @@
                 </div>
                 <div class="profile-details">
                     <div class="details">
-                        <p class="details-p">Cosmin Manole</p>
-                        <p class="details-p" style="margin-bottom: 20px;">@username</p>
+                        <p class="details-p">Artist name</p>
+                        <p class="details-p" style="margin-bottom: 20px;">@artistUsername</p>
                     </div>
                     <div class="profile-settings">
                         <button class="btn-edit profile-settings-button" title="Profile settings">
@@ -113,106 +113,122 @@
                     </div>
                 </div>
                 <hr>
-                <div class="profile-favourites">
-                    <h1 class="heading">Your favourites</h1>
-                    <div class="favourites-section">
-                        <div class="favourite-artists">
-                            <div class="div-test">
-                                <h1 class="heading-favourites">ARTISTS</h1>
-                                <div class="div-btn">
-                                    <button class="btn-edit" title="Edit your favourite artists">
-                                        <img src="../resources/img/edit-24.ico" alt="Edit button">
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="favourite-artists-list">
-                                <ol class="favourites-ol">
-                                    <li class="favourites-li">
-                                        <span class="favourite-image">
-                                            <img class="artist-img" src="../resources/img/ghost-voices-image.jpg"
-                                                alt="">
-                                        </span>
-                                        <a class="favourite-name" href="artist.html">ARTIST NAME</a>
-                                    </li>
-                                    <li class="favourites-li"><span class="favourite-image">
-                                            <img class="artist-img" src="../resources/img/ghost-voices-image.jpg"
-                                                alt="">
-                                        </span>
-                                        <a class="favourite-name" href="artist.html">ARTIST NAME</a>
-                                    </li>
-                                    <li class="favourites-li"><span class="favourite-image">
-                                            <img class="artist-img" src="../resources/img/ghost-voices-image.jpg"
-                                                alt="">
-                                        </span>
-                                        <a class="favourite-name" href="artist.html">ARTIST NAME</a>
-                                    </li>
-                                </ol>
-                            </div>
+                <div class="artist-feed flex">
+                    <div style="width: 50%;">
+                        <h1 class="heading">Top songs</h1>
+                        <div class="top-songs flex justify-center">
+                            <ul class="flex align-start flex-column list">
+                                <li class="top-songs-list-item">
+                                    <div class="div-list-item flex">
+                                        <div class="img">
+                                            <img src="../resources/img/ghost-voices-image.jpg" alt="">
+                                        </div>
+                                        <div class="top-song-name flex align-center">
+                                            <p>ABC</p>
+                                        </div>
+                                        <div class="top-song-like flex align-center justify-center">
+                                            <img src="../resources/img/heart_empty.png" alt="">
+                                        </div>
+                                        <div class="top-song-length flex align-center justify-center">1:00</div>
+                                    </div>
+                                </li>
+                                <li class="top-songs-list-item">
+                                    <div class="div-list-item flex">
+                                        <div class="img">
+                                            <img src="../resources/img/ghost-voices-image.jpg" alt="">
+                                        </div>
+                                        <div class="top-song-name flex align-center">
+                                            <p>ABC</p>
+                                        </div>
+                                        <div class="top-song-like flex align-center justify-center">
+                                            <img src="../resources/img/heart_empty.png" alt="">
+                                        </div>
+                                        <div class="top-song-length flex align-center justify-center">1:00</div>
+                                    </div>
+                                </li>
+                                <li class="top-songs-list-item">
+                                    <div class="div-list-item flex">
+                                        <div class="img"><img src="../resources/img/ghost-voices-image.jpg" alt="">
+                                        </div>
+                                        <div class="top-song-name flex align-center">
+                                            <p>ABC</p>
+                                        </div>
+                                        <div class="top-song-like flex align-center justify-center">
+                                            <img src="../resources/img/heart_empty.png" alt="">
+                                        </div>
+                                        <div class="top-song-length flex align-center justify-center">1:00</div>
+                                    </div>
+                                </li>
+                                <li class="top-songs-list-item">
+                                    <div class="div-list-item flex">
+                                        <div class="img">
+                                            <img src="../resources/img/ghost-voices-image.jpg" alt="">
+                                        </div>
+                                        <div class="top-song-name flex align-center">
+                                            <p>ABC</p>
+                                        </div>
+                                        <div class="top-song-like flex align-center justify-center">
+                                            <img src="../resources/img/heart_empty.png" alt="">
+                                        </div>
+                                        <div class="top-song-length flex align-center justify-center">1:00</div>
+                                    </div>
+                                </li>
+                                <li class="top-songs-list-item">
+                                    <div class="div-list-item flex">
+                                        <div class="img">
+                                            <img src="../resources/img/ghost-voices-image.jpg" alt="">
+                                        </div>
+                                        <div class="top-song-name flex align-center">
+                                            <p>ABC</p>
+                                        </div>
+                                        <div class="top-song-like flex align-center justify-center">
+                                            <img src="../resources/img/heart_empty.png" alt="">
+                                        </div>
+                                        <div class="top-song-length flex align-center justify-center">1:00</div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="favourite-songs">
-                            <div class="div-test">
-                                <h1 class="heading-favourites">SONGS</h1>
-                                <div class="div-btn">
-                                    <button class="btn-edit" title="Edit your favourite songs">
-                                        <img src="../resources/img/edit-24.ico" alt="">
-                                    </button>
+                    </div>
+                    <div style="width: 50%;">
+                        <h1 class="heading">Releases</h1>
+                        <div class="releases flex">
+                            <div class="releases-tab flex flex-column">
+                                <div class="tab-bar">
+                                    <button class="tab-btn">Singles</button>
+                                    <button class="tab-btn">Albums</button>
                                 </div>
-                            </div>
-                            <div class="favourite-songs-list">
-                                <ol class="favourites-ol">
-                                    <li class="favourites-li">
-                                        <span class="favourite-image">
-                                            <img class="artist-img" src="../resources/img/ghost-voices-image.jpg"
-                                                alt="">
-                                        </span>
-                                        <p class="favourite-name">TEXT</p>
-                                    </li>
-                                    <li class="favourites-li"><span class="favourite-image">
-                                            <img class="artist-img" src="../resources/img/ghost-voices-image.jpg"
-                                                alt="">
-                                        </span>
-                                        <p class="favourite-name">TEXT</p>
-                                    </li>
-                                    <li class="favourites-li"><span class="favourite-image">
-                                            <img class="artist-img" src="../resources/img/ghost-voices-image.jpg"
-                                                alt="">
-                                        </span>
-                                        <p class="favourite-name">TEXT</p>
-                                    </li>
-                                </ol>
-                            </div>
-                        </div>
-                        <div class="favourite-albums">
-                            <div class="div-test">
-                                <h1 class="heading-favourites">ALBUMS</h1>
-                                <div class="div-btn">
-                                    <button class="btn-edit" title="Edit your favourite albums">
-                                        <img src="../resources/img/edit-24.ico" alt="">
-                                    </button>
+                                <div class="tab-content flex align-center">
+                                    <button class="btn-act">&larr;</button>
+                                    <div class="tab-singles">
+                                        <div class="flex flex-column grid-single justify-center align-center">
+                                            <div class="single-image">
+                                                <img src="../resources/img/ghost-voices-image.jpg" alt="">
+                                            </div>
+                                            <p style="text-align: center; margin: 5px 0;">abc</p>
+                                        </div>
+                                        <div class="flex flex-column grid-single justify-center align-center">
+                                            <div class="single-image">
+                                                <img src="../resources/img/ghost-voices-image.jpg" alt="">
+                                            </div>
+                                            <p style="text-align: center; margin: 5px 0;">abc</p>
+                                        </div>
+                                        <div class="flex flex-column grid-single justify-center align-center">
+                                            <div class="single-image">
+                                                <img src="../resources/img/ghost-voices-image.jpg" alt="">
+                                            </div>
+                                            <p style="text-align: center; margin: 5px 0;">abc</p>
+                                        </div>
+                                        <div class="flex flex-column grid-single justify-center align-center">
+                                            <div class="single-image">
+                                                <img src="../resources/img/ghost-voices-image.jpg" alt="">
+                                            </div>
+                                            <p style="text-align: center; margin: 5px 0;">abc</p>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="tab-albums"></div> -->
+                                    <button class="btn-act">&rarr;</button>
                                 </div>
-                            </div>
-                            <div class="favourite-albums-list">
-                                <ol class="favourites-ol">
-                                    <li class="favourites-li">
-                                        <span class="favourite-image">
-                                            <img class="artist-img" src="../resources/img/ghost-voices-image.jpg"
-                                                alt="">
-                                        </span>
-                                        <p class="favourite-name">TEXT</p>
-                                    </li>
-                                    <li class="favourites-li"><span class="favourite-image">
-                                            <img class="artist-img" src="../resources/img/ghost-voices-image.jpg"
-                                                alt="">
-                                        </span>
-                                        <p class="favourite-name">TEXT</p>
-                                    </li>
-                                    <li class="favourites-li"><span class="favourite-image">
-                                            <img class="artist-img" src="../resources/img/ghost-voices-image.jpg"
-                                                alt="">
-                                        </span>
-                                        <p class="favourite-name">TEXT</p>
-                                    </li>
-                                </ol>
                             </div>
                         </div>
                     </div>
