@@ -60,7 +60,7 @@
                         </span>
                     </div>
                     <div class="play-song">
-                        <span class="icons">
+                        <span id="spanPlay" class="icons" onclick="playSong()">
                             <img src="../resources/img/play-button.png">
                         </span>
                     </div>
@@ -70,14 +70,28 @@
                         </span>
                     </div>
                     <div class="progress-bar-song" data-label="Progress bar">
-
+                        <p>0:00</p>
+                        <div class="progress-slider" id="progress-slider">
+                            <div class="progress" id="progress"></div>
+                        </div>
+                        <p>1:00:00</p>
                     </div>
                     <div class="volume">
 
                     </div>
+                    <div class="playing-song">
+                        <p class="playing-song-details song-artist">Virtual Self</p>
+                        <p class="playing-song-details song-name">GHOST VOICES</p>
+                    </div>
+                    <div class="like-song">
+                        <span class="icons">
+                            <img src="../resources/img/heart_empty.png">
+                            <!-- <img src="../resources/img/heart_full.png"> -->
+                        </span>
+                    </div>
                 </div>
-                <audio controls class="player" muted hidden>
-                    <source src="../resources/audio/GHOST VOICES (TISOKI FLIP).mp3" type="audio/mpeg">
+                <audio id="music-player" src="../resources/audio/GHOST VOICES (TISOKI FLIP).mp3" type="audio/mpeg"
+                    controls muted hidden>
                 </audio>
             </div>
             <div class="profile">
@@ -94,7 +108,7 @@
                     </div>
                     <div class="profile-settings">
                         <button class="btn-edit profile-settings-button" title="Profile settings">
-                            <img src="../resources/img/menu-dots.png" alt="Profile settings menu">
+                            <img src="../resources/img/more.png" alt="Profile settings menu">
                         </button>
                     </div>
                 </div>
@@ -107,7 +121,7 @@
                                 <h1 class="heading-favourites">ARTISTS</h1>
                                 <div class="div-btn">
                                     <button class="btn-edit" title="Edit your favourite artists">
-                                        <img src="../resources/img/edit-24.ico" alt="Edit button">
+                                        <img src="../resources/img/pencil.png" alt="Edit button">
                                     </button>
                                 </div>
                             </div>
@@ -118,19 +132,19 @@
                                             <img class="artist-img" src="../resources/img/ghost-voices-image.jpg"
                                                 alt="">
                                         </span>
-                                        <p class="favourite-name">TEXT</p>
+                                        <a class="favourite-name" href="artist.html">ARTIST NAME</a>
                                     </li>
                                     <li class="favourites-li"><span class="favourite-image">
                                             <img class="artist-img" src="../resources/img/ghost-voices-image.jpg"
                                                 alt="">
                                         </span>
-                                        <p class="favourite-name">TEXT</p>
+                                        <a class="favourite-name" href="artist.html">ARTIST NAME</a>
                                     </li>
                                     <li class="favourites-li"><span class="favourite-image">
                                             <img class="artist-img" src="../resources/img/ghost-voices-image.jpg"
                                                 alt="">
                                         </span>
-                                        <p class="favourite-name">TEXT</p>
+                                        <a class="favourite-name" href="artist.html">ARTIST NAME</a>
                                     </li>
                                 </ol>
                             </div>
@@ -140,7 +154,7 @@
                                 <h1 class="heading-favourites">SONGS</h1>
                                 <div class="div-btn">
                                     <button class="btn-edit" title="Edit your favourite songs">
-                                        <img src="../resources/img/edit-24.ico" alt="">
+                                        <img src="../resources/img/pencil.png" alt="Edit button">
                                     </button>
                                 </div>
                             </div>
@@ -173,7 +187,7 @@
                                 <h1 class="heading-favourites">ALBUMS</h1>
                                 <div class="div-btn">
                                     <button class="btn-edit" title="Edit your favourite albums">
-                                        <img src="../resources/img/edit-24.ico" alt="">
+                                        <img src="../resources/img/pencil.png" alt="Edit button">
                                     </button>
                                 </div>
                             </div>

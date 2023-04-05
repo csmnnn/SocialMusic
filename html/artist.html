@@ -1,0 +1,317 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Artist name | SocialMusic</title>
+</head>
+
+<body>
+    <div class="flexbox-homepage-container">
+        <div class="flexbox-homepage-item-1">
+            <ul class="nav-bar">
+                <li class="nav-bar-item">
+                    <a class="homeLink" href="index.html">
+                        <span class="icon">
+                            <img class="item-icon" src="../resources/img/home_empty.png" alt="">
+                            Home
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-bar-item">
+                    <a class="homeLink" href="discover.html">
+                        <span class="icon">
+                            <img class="item-icon" src="../resources/img/shuffle.png" alt="">
+                            Discover
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-bar-item">
+                    <a class="homeLink" href="upload.html">
+                        <span class="icon">
+                            <img class="item-icon" src="../resources/img/upload_empty.png" alt="">
+                            Upload
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-bar-item">
+                    <a class="homeLink" href="profile.html">
+                        <span class="icon">
+                            <img class="item-icon" src="../resources/img/profile_full.png" alt="">
+                            Profile
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="flexbox-homepage-item-2">
+            <div class="music-player">
+                <div class="about-song">
+                    <span class="icons">
+                        <img src="../resources/img/menu.png">
+                    </span>
+                </div>
+                <div class="music-player-panel">
+                    <div class="previous-song">
+                        <span class="icons">
+                            <img src="../resources/img/previous-button.png">
+                        </span>
+                    </div>
+                    <div class="play-song">
+                        <span id="spanPlay" class="icons" onclick="playSong()">
+                            <img src="../resources/img/play-button.png">
+                        </span>
+                    </div>
+                    <div class="next-song">
+                        <span class="icons">
+                            <img src="../resources/img/forward-button.png">
+                        </span>
+                    </div>
+                    <div class="progress-bar-song" data-label="Progress bar">
+                        <p>0:00</p>
+                        <div class="progress-slider" id="progress-slider">
+                            <div class="progress" id="progress"></div>
+                        </div>
+                        <p>1:00:00</p>
+                    </div>
+                    <div class="volume">
+
+                    </div>
+                    <div class="playing-song">
+                        <p class="playing-song-details song-artist">Virtual Self</p>
+                        <p class="playing-song-details song-name">GHOST VOICES</p>
+                    </div>
+                    <div class="like-song">
+                        <span class="icons">
+                            <img src="../resources/img/heart_empty.png">
+                            <!-- <img src="../resources/img/heart_full.png"> -->
+                        </span>
+                    </div>
+                </div>
+                <audio id="music-player" src="../resources/audio/GHOST VOICES (TISOKI FLIP).mp3" type="audio/mpeg"
+                    controls muted hidden>
+                </audio>
+            </div>
+            <div class="profile">
+                <div class="profile-banner">
+                    <img class="banner-photo" src="../resources/img/profile-banner.jpg" alt="">
+                </div>
+                <div class="profile-image">
+                    <img class="profile-photo" src="../resources/img/tioski-avatar.jpg">
+                </div>
+                <div class="profile-details">
+                    <div class="details">
+                        <p class="details-p">Tisoki</p>
+                        <p class="details-p" style="margin-bottom: 20px;">@tisoki</p>
+                    </div>
+                    <div class="profile-settings">
+                        <button class="btn-edit profile-settings-button" title="Profile settings">
+                            <img src="../resources/img/menu-dots.png" alt="Profile settings menu">
+                        </button>
+                    </div>
+                </div>
+                <hr>
+                <div class="artist-feed flex">
+                    <div style="width: 50%;">
+                        <h1 class="heading">Top songs</h1>
+                        <div class="top-songs flex justify-center">
+                            <ul class="flex align-start flex-column list">
+                                <li class="top-songs-list-item">
+                                    <div class="div-list-item flex">
+                                        <div class="img">
+                                            <img src="../resources/img/ghost-voices-image.jpg" alt="">
+                                        </div>
+                                        <div class="top-song-name flex align-center">
+                                            <p>ABC</p>
+                                        </div>
+                                        <div class="top-song-like flex align-center justify-center">
+                                            <img src="../resources/img/heart_empty.png" alt="">
+                                        </div>
+                                        <div class="top-song-length flex align-center justify-center">1:00</div>
+                                    </div>
+                                </li>
+                                <li class="top-songs-list-item">
+                                    <div class="div-list-item flex">
+                                        <div class="img">
+                                            <img src="../resources/img/ghost-voices-image.jpg" alt="">
+                                        </div>
+                                        <div class="top-song-name flex align-center">
+                                            <p>ABC</p>
+                                        </div>
+                                        <div class="top-song-like flex align-center justify-center">
+                                            <img src="../resources/img/heart_empty.png" alt="">
+                                        </div>
+                                        <div class="top-song-length flex align-center justify-center">1:00</div>
+                                    </div>
+                                </li>
+                                <li class="top-songs-list-item">
+                                    <div class="div-list-item flex">
+                                        <div class="img"><img src="../resources/img/ghost-voices-image.jpg" alt="">
+                                        </div>
+                                        <div class="top-song-name flex align-center">
+                                            <p>ABC</p>
+                                        </div>
+                                        <div class="top-song-like flex align-center justify-center">
+                                            <img src="../resources/img/heart_empty.png" alt="">
+                                        </div>
+                                        <div class="top-song-length flex align-center justify-center">1:00</div>
+                                    </div>
+                                </li>
+                                <li class="top-songs-list-item">
+                                    <div class="div-list-item flex">
+                                        <div class="img">
+                                            <img src="../resources/img/ghost-voices-image.jpg" alt="">
+                                        </div>
+                                        <div class="top-song-name flex align-center">
+                                            <p>ABC</p>
+                                        </div>
+                                        <div class="top-song-like flex align-center justify-center">
+                                            <img src="../resources/img/heart_empty.png" alt="">
+                                        </div>
+                                        <div class="top-song-length flex align-center justify-center">1:00</div>
+                                    </div>
+                                </li>
+                                <li class="top-songs-list-item">
+                                    <div class="div-list-item flex">
+                                        <div class="img">
+                                            <img src="../resources/img/ghost-voices-image.jpg" alt="">
+                                        </div>
+                                        <div class="top-song-name flex align-center">
+                                            <p>ABC</p>
+                                        </div>
+                                        <div class="top-song-like flex align-center justify-center">
+                                            <img src="../resources/img/heart_empty.png" alt="">
+                                        </div>
+                                        <div class="top-song-length flex align-center justify-center">1:00</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="width: 50%;">
+                        <h1 class="heading">Releases</h1>
+                        <div class="releases flex">
+                            <div class="releases-tab flex flex-column">
+                                <div class="tab-bar">
+                                    <button class="tab-btn">Singles</button>
+                                    <button class="tab-btn">Albums</button>
+                                </div>
+                                <div class="tab-content flex align-center">
+                                    <button class="btn-act">&larr;</button>
+                                    <div class="tab-singles">
+                                        <div class="flex flex-column grid-single justify-center align-center">
+                                            <div class="single-image">
+                                                <img src="../resources/img/ghost-voices-image.jpg" alt="">
+                                            </div>
+                                            <p style="text-align: center; margin: 5px 0;">abc</p>
+                                        </div>
+                                        <div class="flex flex-column grid-single justify-center align-center">
+                                            <div class="single-image">
+                                                <img src="../resources/img/ghost-voices-image.jpg" alt="">
+                                            </div>
+                                            <p style="text-align: center; margin: 5px 0;">abc</p>
+                                        </div>
+                                        <div class="flex flex-column grid-single justify-center align-center">
+                                            <div class="single-image">
+                                                <img src="../resources/img/ghost-voices-image.jpg" alt="">
+                                            </div>
+                                            <p style="text-align: center; margin: 5px 0;">abc</p>
+                                        </div>
+                                        <div class="flex flex-column grid-single justify-center align-center">
+                                            <div class="single-image">
+                                                <img src="../resources/img/ghost-voices-image.jpg" alt="">
+                                            </div>
+                                            <p style="text-align: center; margin: 5px 0;">abc</p>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="tab-albums"></div> -->
+                                    <button class="btn-act">&rarr;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flexbox-homepage-item-3">
+            <p class="section-1"> Next in Queue</p>
+            <hr>
+            <div class="queue">
+                <ul class="queue-list">
+                    <li class="queue-list-item">
+                        <div class="song-image">
+                            <img src="../resources/img/ghost-voices-image-1.jpg" alt="song image">
+                        </div>
+                        <div class="song-details">
+                            <p class="song-artist">
+                                Virtual Self
+                            </p>
+                            <p class="song-name">
+                                GHOST VOICES (TISOKI FLIP)
+                            </p>
+                        </div>
+                    </li>
+                    <li class="queue-list-item">
+                        <div class="song-image">
+                            <img src="../resources/img/ghost-voices-image-1.jpg" alt="song image">
+                        </div>
+                        <div class="song-details">
+                            <p class="song-artist">
+                                Virtual Self
+                            </p>
+                            <p class="song-name">
+                                GHOST VOICES (TISOKI FLIP)
+                            </p>
+                        </div>
+                    </li>
+                    <li class="queue-list-item">
+                        <div class="song-image">
+                            <img src="../resources/img/ghost-voices-image-1.jpg" alt="song image">
+                        </div>
+                        <div class="song-details">
+                            <p class="song-artist">
+                                Virtual Self
+                            </p>
+                            <p class="song-name">
+                                GHOST VOICES (TISOKI FLIP)
+                            </p>
+                        </div>
+                    </li>
+                    <li class="queue-list-item">
+                        <div class="song-image">
+                            <img src="../resources/img/ghost-voices-image-1.jpg" alt="song image">
+                        </div>
+                        <div class="song-details">
+                            <p class="song-artist">
+                                Virtual Self
+                            </p>
+                            <p class="song-name">
+                                GHOST VOICES (TISOKI FLIP)
+                            </p>
+                        </div>
+                    </li>
+                    <li class="queue-list-item">
+                        <div class="song-image">
+                            <img src="../resources/img/ghost-voices-image-1.jpg" alt="song image">
+                        </div>
+                        <div class="song-details">
+                            <p class="song-artist">
+                                Virtual Self
+                            </p>
+                            <p class="song-name">
+                                GHOST VOICES (TISOKI FLIP)
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <p class="section-2">Your playlists</p>
+
+        </div>
+    </div>
+</body>
+
+</html>
