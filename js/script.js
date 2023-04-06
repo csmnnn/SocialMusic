@@ -35,6 +35,7 @@ const modalContainer = document.getElementById('modalContainer');
 const closeModal = document.getElementById('close-modal');
 
 const open = document.getElementById('open-modal');
+const openAboutSongModal = document.getElementById('aboutSong');
 const openEditProfileModal = document.getElementById('btnEditProfile');
 const openEditArtistsModal = document.getElementById('btnEditArtists');
 const openEditSongsModal = document.getElementById('btnEditSongs');
@@ -44,21 +45,27 @@ open.addEventListener('click', () => {
     modalContainer.classList.add('show');
 });
 
-openEditProfileModal.addEventListener('click', () => {
-    modalContainer.classList.add('show');
-});
-
-openEditArtistsModal.addEventListener('click', () => {
+openAboutSongModal.addEventListener('click', () => {
     modalContainer.classList.add('show');
 })
 
-openEditSongsModal.addEventListener('click', () => {
-    modalContainer.classList.add('show');
-})
-
-openEditAlbumsModal.addEventListener('click', () => {
-    modalContainer.classList.add('show');
-})
+if (openEditProfileModal && openEditArtistsModal && openEditSongsModal && openEditAlbumsModal) {
+    openEditProfileModal.addEventListener('click', () => {
+        modalContainer.classList.add('show');
+    });
+    
+    openEditArtistsModal.addEventListener('click', () => {
+        modalContainer.classList.add('show');
+    })
+    
+    openEditSongsModal.addEventListener('click', () => {
+        modalContainer.classList.add('show');
+    })
+    
+    openEditAlbumsModal.addEventListener('click', () => {
+        modalContainer.classList.add('show');
+    })
+}
 
 closeModal.addEventListener('click', () => {
     modalContainer.classList.remove('show');
