@@ -1,27 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background-color: aliceblue;
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-}
-
-button {
-    border: 0;
-    border-radius: 5px;
-    padding: 10px 25px;
-    background-color: aquamarine;
-    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.2);
-    font-size: 14px;
-    cursor: pointer;
-}
-
 .modal-container {
     opacity: 0;
     pointer-events: none;

@@ -21,10 +21,45 @@ playSpan.onclick = function (event) {
 
 var likeButton = document.getElementById('like')
 
-document.getElementById('like').onclick = function() {
-    if (document.getElementById('like').src == "http://127.0.0.1:5500/resources/img/heart_empty.png") {
-        document.getElementById('like').src = "http://127.0.0.1:5500/resources/img/heart_full.png"
-    } else {
-        document.getElementById('like').src = "http://127.0.0.1:5500/resources/img/heart_empty.png"
+if (likeButton != null) {
+    document.getElementById('like').onclick = function() {
+        if (document.getElementById('like').src == "http://127.0.0.1:5500/resources/img/heart_empty.png") {
+            document.getElementById('like').src = "http://127.0.0.1:5500/resources/img/heart_full.png"
+        } else {
+            document.getElementById('like').src = "http://127.0.0.1:5500/resources/img/heart_empty.png"
+        }
     }
 }
+
+const modalContainer = document.getElementById('modalContainer');
+const closeModal = document.getElementById('close-modal');
+
+const open = document.getElementById('open-modal');
+const openEditProfileModal = document.getElementById('btnEditProfile');
+const openEditArtistsModal = document.getElementById('btnEditArtists');
+const openEditSongsModal = document.getElementById('btnEditSongs');
+const openEditAlbumsModal = document.getElementById('btnEditAlbums');
+
+open.addEventListener('click', () => {
+    modalContainer.classList.add('show');
+});
+
+openEditProfileModal.addEventListener('click', () => {
+    modalContainer.classList.add('show');
+});
+
+openEditArtistsModal.addEventListener('click', () => {
+    modalContainer.classList.add('show');
+})
+
+openEditSongsModal.addEventListener('click', () => {
+    modalContainer.classList.add('show');
+})
+
+openEditAlbumsModal.addEventListener('click', () => {
+    modalContainer.classList.add('show');
+})
+
+closeModal.addEventListener('click', () => {
+    modalContainer.classList.remove('show');
+});
