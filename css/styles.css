@@ -862,6 +862,7 @@ hr {
 .album-song-name > p {
     margin: 0;
     font-size: 18px;
+    /* font-weight: bold; */
 }
 
 .div-album-list-item {
@@ -895,12 +896,17 @@ hr {
     border: 2px solid #ccc;
 }
 
-.album-artist > a {
+.album-artist a {
     text-decoration: none;
 }
 
-.album-artist > a:visited {
-    color: black;
+.album-artist > a:visited,
+.album-artis a:link {
+    color: black;   
+}
+
+.album-artist a:hover {
+    color: #848484;
 }
 
 .artist-avatar {
@@ -915,4 +921,35 @@ hr {
 
 #like {
     cursor: pointer;
+}
+
+.song-title {
+    font-weight: bold;
+}
+
+.song-writers {
+    color: #848484;
+}
+
+.song-writers:hover {
+    color: black;
+    transition: 0.25s;
+}
+
+.song-writers:hover span {
+    color: #848484;
+}
+
+.writers a {
+    text-decoration: none;
+}
+
+.album-songs-list {
+    width: 75%;
+}
+
+.song-number {
+    font-size: 18px;
+    height: 100%;
+    width: 10%;
 }
