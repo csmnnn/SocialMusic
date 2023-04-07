@@ -41,6 +41,15 @@ const openEditArtistsModal = document.getElementById('btnEditArtists');
 const openEditSongsModal = document.getElementById('btnEditSongs');
 const openEditAlbumsModal = document.getElementById('btnEditAlbums');
 
+const songs = document.getElementsByClassName('songs');
+if (songs) {
+    for (let song of songs) {
+        song.addEventListener('click', () => {
+            modalContainer.classList.add('show');
+        })
+    }
+}
+
 open.addEventListener('click', () => {
     modalContainer.classList.add('show');
 });
