@@ -612,7 +612,7 @@ hr {
     height: 100%;
 }
 
-.div-test {
+.div-heading {
     display: flex;
     height: 15%;
     margin-bottom: 15px;
@@ -681,17 +681,42 @@ hr {
     margin: 0;
 }
 
-.artist-img {
+.fav-img {
     width: inherit;
     height: inherit;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .favourite-name {
+    text-decoration: none;
+    color: #000000c9;
     padding: 0;
-    margin: 0;
-    width: 100%;
+    margin: 0 auto;
+    width: fit-content;
     font-size: 32px;
     text-align: center;
+}
+
+.favourite-name:hover,
+.favourite-name:visited {
+    color: black;
+}
+
+.about-fav {
+    height: 100%;
+    width: calc(100% - 75px);
+    text-align: center;
+}
+
+.about-fav a {
+    color: #848484;
+    font-size: 16px;
+}
+
+.about-fav p {
+    font-size: 24px;
+    color: black;
 }
 
 /**********************************************/
