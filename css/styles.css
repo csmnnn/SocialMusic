@@ -809,14 +809,13 @@ hr {
     align-content: center;
     column-gap: 5%;
     row-gap: 5%;
-    grid-template-columns: repeat(4, 15%);
+    grid-template-columns: repeat(4, 16%);
     grid-auto-rows: 40%;
     height: 100%;
 }
 
 .discover-song {
     height: fit-content;
-    margin: 10% 0;
     border-radius: 10%;
     background-color: #e2d4d4a9;
 }
