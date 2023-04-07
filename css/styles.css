@@ -164,6 +164,7 @@ form[name="registerForm"] {
     justify-content: center;
     align-items: center;
     height: 6%;
+    width: 100%;
     border-bottom: 1px solid #ccc;
 }
 
@@ -185,7 +186,7 @@ form[name="registerForm"] {
 .play-song,
 .next-song,
 .like-song {
-    cursor: pointer;
+    
     display: flex;
     align-items: center;
     width: 7%;
@@ -194,10 +195,10 @@ form[name="registerForm"] {
 
 .progress-bar-song {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: 10px;
-    width: 60%;
+    width: 50%;
     color: black;
     text-align: center;
 }
@@ -221,19 +222,18 @@ form[name="registerForm"] {
 }
 
 .playing-song {
-    width: 15%;
+    margin: 0 15px;
+    width: 20%;
 }
 
-.playing-song-details.song-name,
-.playing-song-details.song-artist {
-    margin: 0;
+.playing-song-details.song-name {
     padding: 0;
     text-align: left;
-    margin: 3px 0;
     font-size: 1em;
 }
 
 .icons {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,11 +264,13 @@ form[name="registerForm"] {
     margin: 0 0 20px 0;
     padding: 0;
     text-align: left;
+    color: #000000c9;
     font-size: 32px;
 }
 
 .playlist {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
     height: 50%;
@@ -285,10 +287,16 @@ form[name="registerForm"] {
     background-color: #e2d4d4a9;
 }
 
+.playlist-item a {
+    text-decoration: none;
+    color: #000000c9;
+}
+
 .playlist-image {
+    cursor: pointer;
     width: 150px;
     height: 150px;
-    margin-top: 10px;
+    margin-top: 4%;
     border-radius: 10%;
 }
 
@@ -347,6 +355,9 @@ form[name="registerForm"] {
 }
 
 .flexbox-homepage-item-2 {
+    /* display: flex;
+    flex-direction: column; */
+    /* flex-wrap: wrap; */
     width: 70%;
     height: 100%;
     overflow-y: scroll;
@@ -355,6 +366,7 @@ form[name="registerForm"] {
 .homepage-feed {
     display: flex;
     flex-direction: column;
+    /* flex-wrap: wrap; */
     justify-content: center;
     height: 93%;
 }
@@ -424,33 +436,54 @@ form[name="registerForm"] {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 50%;
+    margin-top: -20px;
+    height: calc(50% - 50px);
 }
 
 .queue-list {
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 0;
-    height: 100%;
+    margin: 0;
+    height: calc(100% - 40px);
     width: 100%;
-    gap: 15px;
+    gap: 10px;
 }
 
 .queue-list-item {
     display: flex;
-    justify-content: left;
     list-style-type: none;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 5px;
     width: 90%;
     height: 50px;
 }
 
-.song-image {
+.song-image,
+.user-playlist-image {
+    cursor: pointer;
     width: 50px;
     height: 50px;
+    border-radius: 5px;
+}
+
+.song-image img, 
+.user-playlist-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+}
+
+.user-playlist-details {
+    width: calc(100% - 50px);
+}
+
+.user-playlist-name {
+    text-align: center;
+    margin: 0;
 }
 
 .song-artist {
@@ -480,6 +513,7 @@ hr {
 .section-2 {
     padding: 0;
     margin: 5px 10px;
+    color: #000000c9;
 }
 
 .section-1 {
@@ -950,7 +984,8 @@ hr {
 }
 
 .song-writers:hover,
-.song-title:hover {
+.song-title:hover,
+.playing-song-details.song-title:hover {
     color: black;
     transition: 0.25s;
 }
@@ -959,7 +994,8 @@ hr {
     color: #848484;
 }
 
-.writers a {
+.writers a,
+.playing-song-details.song-writers {
     text-decoration: none;
 }
 
