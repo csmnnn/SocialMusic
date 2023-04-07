@@ -5,10 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Discover</title>
+    <link rel="stylesheet" href="../css/modal.css">
+    <script src="../js/script.js" defer></script>
+    <title>Discover | SocialMusic</title>
 </head>
 
 <body>
+
+    <div class="modal-container" id="modalContainer">
+        <div class="modal">
+            <h1>Modal</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima vitae dolore eligendi non accusantium
+                voluptatibus sit cumque, natus facilis magnam aperiam animi dicta consectetur debitis sunt aliquam iure
+                nisi iusto.</p>
+            <button id="close-modal">Close modal</button>
+        </div>
+    </div>
+
     <div class="flexbox-homepage-container">
         <div class="flexbox-homepage-item-1">
             <ul class="nav-bar">
@@ -29,7 +42,7 @@
                     </a>
                 </li>
                 <li class="nav-bar-item">
-                    <a class="homeLink" href="upload.html">
+                    <a role="button" id="open-modal" class="homeLink">
                         <span class="icon">
                             <img class="item-icon" src="../resources/img/upload_empty.png" alt="">
                             Upload
@@ -48,9 +61,9 @@
         </div>
         <div class="flexbox-homepage-item-2">
             <div class="music-player">
-                <div class="about-song">
+                <div id="aboutSong" class="about-song">
                     <span class="icons">
-                        <img src="../resources/img/menu.png">
+                        <img src="../resources/img/info_24.png">
                     </span>
                 </div>
                 <div class="music-player-panel">
@@ -95,56 +108,67 @@
                 </audio>
             </div>
             <div class="homepage-feed">
-                <h1 class="heading">.......</h1>
+                <div class="flex align-center">
+                    <h1 class="heading">Discover Daily | dd.mm.yyyy</h1>
+                    <button type="button" class="add-playlist">Add to your playlists</button>
+                </div>
                 <hr>
                 <div class="discover-songs-container">
                     <div class="discover-song flex flex-column align-center">
                         <div class="discover-song-img">
                             <img src="../resources/img/ghost-voices-image.jpg" alt="">
                         </div>
-                        <p style="margin: 0;">abc</p>
+                        <a class="song-writers" href="artist.html">Artist</a>
+                        <p class="songs song-title">Song name</p>
                     </div>
                     <div class="discover-song flex flex-column align-center">
                         <div class="discover-song-img">
                             <img src="../resources/img/ghost-voices-image.jpg" alt="">
                         </div>
-                        <p style="margin: 0;">abc</p>
+                        <a class="song-writers" href="artist.html">Artist</a>
+                        <p class="songs song-title">Song name</p>
                     </div>
                     <div class="discover-song flex flex-column align-center">
                         <div class="discover-song-img">
                             <img src="../resources/img/ghost-voices-image.jpg" alt="">
                         </div>
-                        <p style="margin: 0;">abc</p>
+                        <a class="song-writers" href="artist.html">Artist</a>
+                        <p class="songs song-title">Song name</p>
                     </div>
                     <div class="discover-song flex flex-column align-center">
                         <div class="discover-song-img">
                             <img src="../resources/img/ghost-voices-image.jpg" alt="">
                         </div>
-                        <p style="margin: 0;">abc</p>
+                        <a class="song-writers" href="artist.html">Artist</a>
+                        <p class="songs song-title">Song name</p>
                     </div>
                     <div class="discover-song flex flex-column align-center">
                         <div class="discover-song-img">
                             <img src="../resources/img/ghost-voices-image.jpg" alt="">
                         </div>
-                        <p style="margin: 0;">abc</p>
+                        <a class="song-writers" href="artist.html">Artist</a>
+                        <p class="songs song-title">Song name</p>
                     </div>
                     <div class="discover-song flex flex-column align-center">
                         <div class="discover-song-img">
                             <img src="../resources/img/ghost-voices-image.jpg" alt="">
                         </div>
-                        <p style="margin: 0;">abc</p>
+                        <a class="song-writers" href="artist.html">Artist</a>
+                        <p class="songs song-title">Song name</p>
                     </div>
                     <div class="discover-song flex flex-column align-center">
                         <div class="discover-song-img">
                             <img src="../resources/img/ghost-voices-image.jpg" alt="">
                         </div>
-                        <p style="margin: 0;">abc</p>
+                        <a class="song-writers" href="artist.html">Artist</a>
+                        <p class="songs song-title">Song name</p>
                     </div>
                     <div class="discover-song flex flex-column align-center">
                         <div class="discover-song-img">
                             <img src="../resources/img/ghost-voices-image.jpg" alt="">
                         </div>
-                        <p style="margin: 0;">abc</p>
+                        <a class="song-writers" href="artist.html">Artist</a>
+                        <p class="songs song-title">Song name</p>
                     </div>
                 </div>
             </div>

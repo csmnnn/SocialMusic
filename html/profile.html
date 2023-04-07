@@ -5,10 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Profile</title>
+    <link rel="stylesheet" href="../css/modal.css">
+    <script src="../js/script.js" defer></script>
+    <title>Profile | SocialMusic</title>
 </head>
 
 <body>
+
+    <div class="modal-container" id="modalContainer">
+        <div class="modal">
+            <h1>Modal</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima vitae dolore eligendi non accusantium
+                voluptatibus sit cumque, natus facilis magnam aperiam animi dicta consectetur debitis sunt aliquam iure
+                nisi iusto.</p>
+            <button id="close-modal">Close modal</button>
+        </div>
+    </div>
+
     <div class="flexbox-homepage-container">
         <div class="flexbox-homepage-item-1">
             <ul class="nav-bar">
@@ -29,7 +42,7 @@
                     </a>
                 </li>
                 <li class="nav-bar-item">
-                    <a class="homeLink" href="upload.html">
+                    <a role="button" id="open-modal" class="homeLink">
                         <span class="icon">
                             <img class="item-icon" src="../resources/img/upload_empty.png" alt="">
                             Upload
@@ -48,9 +61,9 @@
         </div>
         <div class="flexbox-homepage-item-2">
             <div class="music-player">
-                <div class="about-song">
+                <div id="aboutSong" class="about-song">
                     <span class="icons">
-                        <img src="../resources/img/menu.png">
+                        <img src="../resources/img/info_24.png">
                     </span>
                 </div>
                 <div class="music-player-panel">
@@ -107,7 +120,7 @@
                         <p class="details-p" style="margin-bottom: 20px;">@username</p>
                     </div>
                     <div class="profile-settings">
-                        <button class="btn-edit profile-settings-button" title="Profile settings">
+                        <button class="btn-edit profile-settings-button" title="Profile settings" id="btnEditProfile">
                             <img src="../resources/img/more.png" alt="Profile settings menu">
                         </button>
                     </div>
@@ -120,7 +133,7 @@
                             <div class="div-test">
                                 <h1 class="heading-favourites">ARTISTS</h1>
                                 <div class="div-btn">
-                                    <button class="btn-edit" title="Edit your favourite artists">
+                                    <button id="btnEditArtists" class="btn-edit" title="Edit your favourite artists">
                                         <img src="../resources/img/pencil.png" alt="Edit button">
                                     </button>
                                 </div>
@@ -153,7 +166,7 @@
                             <div class="div-test">
                                 <h1 class="heading-favourites">SONGS</h1>
                                 <div class="div-btn">
-                                    <button class="btn-edit" title="Edit your favourite songs">
+                                    <button id="btnEditSongs" class="btn-edit" title="Edit your favourite songs">
                                         <img src="../resources/img/pencil.png" alt="Edit button">
                                     </button>
                                 </div>
@@ -186,7 +199,7 @@
                             <div class="div-test">
                                 <h1 class="heading-favourites">ALBUMS</h1>
                                 <div class="div-btn">
-                                    <button class="btn-edit" title="Edit your favourite albums">
+                                    <button id="btnEditAlbums" class="btn-edit" title="Edit your favourite albums">
                                         <img src="../resources/img/pencil.png" alt="Edit button">
                                     </button>
                                 </div>
