@@ -355,9 +355,6 @@ form[name="registerForm"] {
 }
 
 .flexbox-homepage-item-2 {
-    /* display: flex;
-    flex-direction: column; */
-    /* flex-wrap: wrap; */
     width: 70%;
     height: 100%;
     overflow-y: scroll;
@@ -366,7 +363,6 @@ form[name="registerForm"] {
 .homepage-feed {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     justify-content: center;
     height: 93%;
 }
@@ -426,7 +422,8 @@ form[name="registerForm"] {
 .album-songs-list-item:hover,
 .tab-btn:hover,
 .btn-act:hover,
-.grid-single:hover {
+.grid-single:hover,
+.btn-act:hover {
     background-color: #e2d4d47c;
     color: #000000c9;
     transition: 0.5s;
@@ -723,7 +720,7 @@ hr {
 /* artist.html */
 
 .artist-feed {
-    height: 85%;
+    height: 80%;
 }
 
 .releases {
@@ -741,7 +738,8 @@ hr {
     font-size: medium;
     font-family: 'BreezeSans';
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 0;
+    background-color: #e2d4d4a9; 
     padding: 10px;
     margin: 0 5px;
 }
@@ -760,38 +758,26 @@ hr {
 
 .tab-singles {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-auto-rows: 50%;
-    width: 400px;
-    height: 400px;
-}
-
-.grid-single {
-    border: 1px solid #ccc;
-    margin: 5px;
-    border-radius: 5%;
-}
-
-.single-image {
-    width: 80%;
-    height: 80%;
-    margin: 10px 0 0 0;
-    border-radius: 5%;
-}
-
-.single-image>img {
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
+    justify-content: center;
+    grid-template-columns: repeat(2, 100%);
+    row-gap: 5%;
+    column-gap: 10%;
+    width: calc(50% - 100px);
+    height: calc(100% - 20px);
 }
 
 .btn-act {
-    background-color: transparent;
-    border: 1px solid #ccc;
+    background-color: #e2d4d4a9;
+    border: 0;
     border-radius: 50%;
     cursor: pointer;
     width: 50px;
     height: 50px;
+}
+
+.btn-act:hover,
+.tab-btn:hover {
+    background-color: #ccc;
 }
 
 .top-songs {
@@ -816,6 +802,10 @@ hr {
     height: 70px;
 }
 
+.div-list-item {
+    padding: 10px;
+}
+
 .list,
 .album-songs-list {
     gap: 10px;
@@ -827,8 +817,7 @@ hr {
 .img {
     width: 70px;
     height: 70px;
-    border-radius: 5%;
-    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .img>img {
@@ -939,7 +928,6 @@ hr {
 .album-song-name > p {
     margin: 0;
     font-size: 18px;
-    /* font-weight: bold; */
 }
 
 .div-album-list-item {
@@ -1009,7 +997,6 @@ hr {
 }
 
 .song-writers:hover,
-.song-title:hover,
 .playing-song-details.song-title:hover {
     color: black;
     transition: 0.25s;
