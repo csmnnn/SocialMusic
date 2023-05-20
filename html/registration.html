@@ -14,37 +14,48 @@
     <div class="flexbox-register-container">
         <div class="flexbox-form-container">
             <p class="flexbox-p-register">Register to SocialMusic</p>
-            <!-- action="../php/process-registration.php" -->
-            <div id="error"></div>
-            <form id="form" name="registerForm" action="registration.html" method="post" novalidate>
+            <form id="form" name="registerForm" action="../php/process-registration.php" method="post" novalidate>
                 <div class="flexbox-form">
+
+                    <span id="error-name" class="error-span">Enter your first and last name</span>
                     <div class="flexbox-input-form-item-name">
-                        <span class="input-span-name" id="span-name"><img src="../resources/img/id-card.png"></span>
+                        <span class="input-span-name" id="span-name">
+                            <img src="../resources/img/id-card.png">
+                        </span>
                         <input class="input-item-name" type="text" id="firstName" name="firstName"
-                            placeholder="First Name">
-                        <input class="input-item-name" type="text" id="lastName" name="lastName"
-                            placeholder="Last Name">
+                            placeholder="First Name" onkeyup="checkName()">
+                        <input class="input-item-name" type="text" id="lastName" name="lastName" placeholder="Last Name"
+                            onkeyup="checkName()">
                     </div>
 
+                    <span id="error-username" class="error-span">Enter your username</span>
                     <div class="flexbox-input-form-item">
-                        <span class="input-span"><img src="../resources/img/user.png"></span>
-                        <input class="input-item" type="text" id="username" name="username" placeholder="Username">
+                        <span class="input-span">
+                            <img src="../resources/img/user.png">
+                        </span>
+                        <input class="input-item" type="text" id="username" name="username" placeholder="Username"
+                            onkeyup="checkUsername()">
                     </div>
 
+                    <span id="error-email" class="error-span">&nbsp;</span>
                     <div class="flexbox-input-form-item">
-                        <span class="input-span"><img src="../resources/img/email.png"></span>
-                        <input class="input-item" type="email" id="email" name="email" placeholder="Email">
+                        <span class="input-span">
+                            <img src="../resources/img/email.png">
+                        </span>
+                        <input class="input-item" type="email" id="email" name="email" placeholder="Email"
+                            onkeyup="checkEmail()">
                     </div>
 
+                    <span id="error-password" class="error-span">Enter your password</span>
                     <div class="flexbox-input-form-item">
-                        <span class="input-span"><img src="../resources/img/password.png"></span>
-                        <input class="input-item" type="password" id="password" name="password" placeholder="Password">
+                        <span class="input-span">
+                            <img src="../resources/img/password.png">
+                        </span>
+                        <input class="input-item" type="password" id="password" name="password" placeholder="Password"
+                            onkeyup="checkPassword()">
                     </div>
 
-                    <button type="submit" class="btn" style="cursor: pointer;">
-                        Register</button>
-
-
+                    <button type="submit" class="btn" style="cursor: pointer;">Register</button>
                 </div>
             </form>
             <a class="loginLink" href="login.html">Already have an account? Log in here!</a>

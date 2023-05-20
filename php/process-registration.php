@@ -46,7 +46,7 @@ $stmt->bind_param(
 
 if ($stmt->execute()) {
     session_start();
-    header("Location: ../php/index.php");
+    header("Location: ../html/login.html");
 } else {
     if ($mysqli->errno === 1062) {
         die("email already taken");
