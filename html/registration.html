@@ -7,13 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/registration.js" defer></script>
 </head>
 
 <body>
     <div class="flexbox-register-container">
         <div class="flexbox-form-container">
             <p class="flexbox-p-register">Register to SocialMusic</p>
-            <form name="registerForm">
+            <!-- action="../php/process-registration.php" -->
+            <div id="error"></div>
+            <form id="form" name="registerForm" action="registration.html" method="post" novalidate>
                 <div class="flexbox-form">
                     <div class="flexbox-input-form-item-name">
                         <span class="input-span-name" id="span-name"><img src="../resources/img/id-card.png"></span>
@@ -38,14 +41,13 @@
                         <input class="input-item" type="password" id="password" name="password" placeholder="Password">
                     </div>
 
-                    <button class="btn" type="button">
-                        <a class="homepageLink" href="index.html">Register</a>
-                    </button>
+                    <button type="submit" class="btn" style="cursor: pointer;">
+                        Register</button>
+
 
                 </div>
             </form>
-            <a class="loginLink" href="login.html">Already have an account? Log in here!</span>
-
+            <a class="loginLink" href="login.html">Already have an account? Log in here!</a>
         </div>
     </div>
 </body>

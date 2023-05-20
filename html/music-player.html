@@ -1,0 +1,43 @@
+<div class="music-player">
+    <div class="about-song">
+        <span id="aboutSong" class="icons">
+            <img src="../resources/img/info_24.png">
+        </span>
+    </div>
+    <div class="music-player-panel">
+        <div class="previous-song">
+            <span class="icons">
+                <img src="../resources/img/previous-button.png">
+            </span>
+        </div>
+        <div class="play-song">
+            <span id="spanPlay" class="icons" onclick="playSong()">
+                <img src="../resources/img/play-button.png">
+            </span>
+        </div>
+        <div class="next-song">
+            <span class="icons">
+                <img src="../resources/img/forward-button.png">
+            </span>
+        </div>
+        <div class="progress-bar-song" data-label="Progress bar">
+            <p>0:00</p>
+            <div class="progress-slider" id="progress-slider">
+                <div class="progress" id="progress"></div>
+            </div>
+            <p>1:00:00</p>
+        </div>
+        <div class="playing-song">
+            <a class="playing-song-details song-writers" href="artist.php">Virtual Self</a>
+            <p class="playing-song-details song-name">GHOST VOICES (TISO...</p>
+        </div>
+        <div class="like-song">
+            <span class="icons">
+                <img src="../resources/img/heart_empty.png">
+            </span>
+        </div>
+    </div>
+    <audio id="music-player" src="../resources/audio/GHOST VOICES (TISOKI FLIP).mp3" type="audio/mpeg"
+        controls muted hidden>
+    </audio>
+</div>

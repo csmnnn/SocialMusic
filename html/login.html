@@ -13,12 +13,8 @@
     <div class="flexbox-register-container">
         <div class="flexbox-form-container">
             <p class="flexbox-p-register">Log in to SocialMusic</p>
-            <form name="registerForm">
+            <form name="registerForm" action="../php/process-login.php" method="post">
                 <div class="flexbox-form">
-                    <div class="flexbox-input-form-item">
-                        <span class="input-span"><img src="../resources/img/user.png"></span>
-                        <input class="input-item" type="text" id="username" name="username" placeholder="Username">
-                    </div>
 
                     <div class="flexbox-input-form-item">
                         <span class="input-span"><img src="../resources/img/email.png"></span>
@@ -30,13 +26,11 @@
                         <input class="input-item" type="password" id="password" name="password" placeholder="Password">
                     </div>
 
-                    <button class="btn" type="button">
-                        <a class="homepageLink" href="index.html">Log in</a>
-                    </button>
+                    <input class="btn" type="submit" value="Log in" style="cursor: pointer;">
 
                 </div>
             </form>
-            <a class="registerLink" href="registration.html">New to SocialMusic? Create new account here!</span>
+            <a class="registerLink" href="registration.html">New to SocialMusic? Create new account here!</a>
 
         </div>
     </div>

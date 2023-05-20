@@ -2,6 +2,7 @@ body {
     font-family: 'BreezeSans', sans-serif, Arial;
     background-color: #e2d4d47c;
     margin: 0;
+    height: 100vh;
 }
 
 .flex {
@@ -25,17 +26,19 @@ body {
 }
 
 .flexbox-register-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100dvh;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 75%;
+    height: 75%;
+    /* width: 80%; */
 }
 
 .flexbox-form-container {
     display: flex;
     flex-direction: column;
-    height: 50%;
-    width: 25%;
+    height: 100%;
+    width: 100%;
     border: 2px solid #FFFFFF;
     border-radius: 10px;
     box-shadow: 20px 20px 30px rgb(0, 0, 0);
@@ -138,7 +141,7 @@ form[name="registerForm"] {
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
-@media screen {
+/* @media screen {
 
     .input-item,
     #lastName {
@@ -154,7 +157,7 @@ form[name="registerForm"] {
         margin-right: 10px;
     }
 
-}
+} */
 
 /*TODO*/
 /*Play with media queries and achieve responsiveness on Register and Login pages*/
@@ -186,7 +189,7 @@ form[name="registerForm"] {
 .play-song,
 .next-song,
 .like-song {
-    
+
     display: flex;
     align-items: center;
     width: 7%;
@@ -467,7 +470,7 @@ form[name="registerForm"] {
     border-radius: 5px;
 }
 
-.song-image img, 
+.song-image img,
 .user-playlist-image img {
     width: 50px;
     height: 50px;
@@ -535,6 +538,7 @@ hr {
     margin-left: 100px;
     margin-top: -80px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .profile-photo {
@@ -543,6 +547,10 @@ hr {
     border-radius: 50%;
     border: 3px solid #FFFFFF;
 }
+
+/* .profile-image:hover {
+    opacity: 0.9;
+} */
 
 .banner-photo {
     width: 100%;
@@ -739,7 +747,7 @@ hr {
     font-family: 'BreezeSans';
     border-radius: 10px;
     border: 0;
-    background-color: #e2d4d4a9; 
+    background-color: #e2d4d4a9;
     padding: 10px;
     margin: 0 5px;
 }
@@ -925,7 +933,7 @@ hr {
     gap: 20px;
 }
 
-.album-song-name > p {
+.album-song-name>p {
     margin: 0;
     font-size: 18px;
 }
@@ -965,9 +973,9 @@ hr {
     text-decoration: none;
 }
 
-.album-artist > a:visited,
+.album-artist>a:visited,
 .album-artis a:link {
-    color: black;   
+    color: black;
 }
 
 .album-artist a:hover {
@@ -978,7 +986,7 @@ hr {
     margin: 0 5px 0 0;
 }
 
-.artist-avatar > img {
+.artist-avatar>img {
     width: 24px;
     height: 24px;
     border-radius: 50%;
