@@ -1,3 +1,7 @@
+body {
+    font-family: 'BreezeSans', sans-serif, Arial;
+}
+
 .modal-container {
     opacity: 0;
     pointer-events: none;
@@ -13,7 +17,8 @@
     transition: opacity 0.3s ease;
 }
 
-.modal-container.show {
+.modal-container.show,
+.checkboxes.show {
     pointer-events: auto;
     opacity: 1;
 }
@@ -22,17 +27,38 @@
     background-color: #fff;
     padding: 30px 50px;
     border-radius: 5px;
-    width: 600px;
+    width: 300px;
+    height: 350px;
     max-width: 100%;    
     box-shadow: 0 2px 4px rgb(0, 0, 0, 0.2);
     text-align: center;
 }
+.checkboxes {
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 150px;
+}
+
+.choice {
+    height: 20px;
+    width: 100%;
+    margin-top: 10px;
+}
 
 .modal h1 {
-    margin: 0;
+    margin: 0 0 20px 0;
 }
 
 .modal p {
     font-size: 14px;
     opacity: 0.7;
+}
+
+#close-modal {
+    cursor: pointer;
+    margin-top: 20px;
 }

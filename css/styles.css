@@ -2,6 +2,7 @@ body {
     font-family: 'BreezeSans', sans-serif, Arial;
     background-color: #e2d4d47c;
     margin: 0;
+    height: 100vh;
 }
 
 .flex {
@@ -24,18 +25,25 @@ body {
     align-items: start;
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .flexbox-register-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100dvh;
+    width: 100%;
+    height: 100%;
 }
 
 .flexbox-form-container {
     display: flex;
     flex-direction: column;
-    height: 50%;
-    width: 25%;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 400px;
     border: 2px solid #FFFFFF;
     border-radius: 10px;
     box-shadow: 20px 20px 30px rgb(0, 0, 0);
@@ -50,14 +58,28 @@ body {
 }
 
 form[name="registerForm"] {
-    height: 90%;
+    height: 100%;
+    width: 75%;
+}
+
+form[name="loginForm"] {
+    height: 45%;
+    width: 75%;
+}
+
+form[name="loginForm"] button {
+    margin-top: 30px;
+}
+
+form[name="registerForm"] button {
+    margin-top: 15px;
 }
 
 .flexbox-form {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 3px;
 }
 
 .flexbox-input-form-item {
@@ -69,7 +91,7 @@ form[name="registerForm"] {
 }
 
 .input-item-name {
-    width: 32%;
+    width: 100%;
     padding: 5px;
     border: 2px solid #ccc;
     font-family: 'BreezeSans';
@@ -98,8 +120,13 @@ form[name="registerForm"] {
     border-bottom-left-radius: 5px;
 }
 
+.error-span {
+    visibility: hidden;
+    color: red;
+}
+
 .input-item {
-    width: 90%;
+    width: 100%;
     padding: 5px;
     border: 2px solid #ccc;
     border-top-right-radius: 5px;
@@ -109,7 +136,6 @@ form[name="registerForm"] {
 
 .btn {
     align-self: center;
-    margin-top: 10px;
     width: 100px;
     height: 30px;
     font-family: 'BreezeSans';
@@ -132,28 +158,10 @@ form[name="registerForm"] {
 .loginLink,
 .registerLink {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-decoration: none;
     color: #000000C9;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-}
-
-@media screen {
-
-    .input-item,
-    #lastName {
-        margin-right: 38px;
-    }
-
-    span {
-        margin-left: 38px;
-    }
-
-    button {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
 }
 
 /*TODO*/
@@ -186,7 +194,7 @@ form[name="registerForm"] {
 .play-song,
 .next-song,
 .like-song {
-    
+
     display: flex;
     align-items: center;
     width: 7%;
@@ -467,7 +475,7 @@ form[name="registerForm"] {
     border-radius: 5px;
 }
 
-.song-image img, 
+.song-image img,
 .user-playlist-image img {
     width: 50px;
     height: 50px;
@@ -535,6 +543,7 @@ hr {
     margin-left: 100px;
     margin-top: -80px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .profile-photo {
@@ -543,6 +552,10 @@ hr {
     border-radius: 50%;
     border: 3px solid #FFFFFF;
 }
+
+/* .profile-image:hover {
+    opacity: 0.9;
+} */
 
 .banner-photo {
     width: 100%;
@@ -739,7 +752,7 @@ hr {
     font-family: 'BreezeSans';
     border-radius: 10px;
     border: 0;
-    background-color: #e2d4d4a9; 
+    background-color: #e2d4d4a9;
     padding: 10px;
     margin: 0 5px;
 }
@@ -880,7 +893,7 @@ hr {
     margin: 4% 0;
 }
 
-.discover-song-img>img {
+.discover-song-img > img {
     width: 100%;
     height: 100%;
     border-radius: inherit;
@@ -925,7 +938,7 @@ hr {
     gap: 20px;
 }
 
-.album-song-name > p {
+.album-song-name>p {
     margin: 0;
     font-size: 18px;
 }
@@ -965,9 +978,9 @@ hr {
     text-decoration: none;
 }
 
-.album-artist > a:visited,
+.album-artist>a:visited,
 .album-artis a:link {
-    color: black;   
+    color: black;
 }
 
 .album-artist a:hover {
@@ -978,7 +991,7 @@ hr {
     margin: 0 5px 0 0;
 }
 
-.artist-avatar > img {
+.artist-avatar>img {
     width: 24px;
     height: 24px;
     border-radius: 50%;

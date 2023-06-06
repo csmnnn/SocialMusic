@@ -7,36 +7,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/validation.js" defer></script>
 </head>
 
 <body>
     <div class="flexbox-register-container">
         <div class="flexbox-form-container">
             <p class="flexbox-p-register">Log in to SocialMusic</p>
-            <form name="registerForm">
+            <form id="formL" name="loginForm" action="../php/process-login.php" method="post" novalidate>
                 <div class="flexbox-form">
+
+                    <span id="error-email" class="error-span">&nbsp;</span>
                     <div class="flexbox-input-form-item">
-                        <span class="input-span"><img src="../resources/img/user.png"></span>
-                        <input class="input-item" type="text" id="username" name="username" placeholder="Username">
+                        <span class="input-span">
+                            <img src="../resources/img/email.png">
+                        </span>
+                        <input class="input-item" type="email" id="email" name="email" placeholder="Email"
+                            autocomplete="off" onkeyup="checkEmail()">
                     </div>
 
+                    <span id="error-password" class="error-span">Enter your password</span>
                     <div class="flexbox-input-form-item">
-                        <span class="input-span"><img src="../resources/img/email.png"></span>
-                        <input class="input-item" type="email" id="email" name="email" placeholder="Email">
+                        <span class="input-span">
+                            <img src="../resources/img/password.png">
+                        </span>
+                        <input class="input-item" type="password" id="password" name="password" placeholder="Password"
+                            autocomplete="off" onkeyup="checkPassword()">
                     </div>
 
-                    <div class="flexbox-input-form-item">
-                        <span class="input-span"><img src="../resources/img/password.png"></span>
-                        <input class="input-item" type="password" id="password" name="password" placeholder="Password">
-                    </div>
-
-                    <button class="btn" type="button">
-                        <a class="homepageLink" href="index.html">Log in</a>
+                    <button class="btn cursor-pointer" type="submit">
+                        Log In
                     </button>
 
                 </div>
             </form>
-            <a class="registerLink" href="registration.html">New to SocialMusic? Create new account here!</span>
+
+            <a class="registerLink" href="registration.html">
+                New to SocialMusic? Create new account here!
+            </a>
 
         </div>
     </div>

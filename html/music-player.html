@@ -1,0 +1,42 @@
+<div class="music-player">
+    <div class="about-song">
+        <span id="aboutSong" class="icons">
+            <img src="../resources/img/info_24.png">
+        </span>
+    </div>
+    <div class="music-player-panel">
+        <div class="previous-song">
+            <span class="icons">
+                <img src="../resources/img/previous-button.png">
+            </span>
+        </div>
+        <div class="play-song">
+            <span id="spanPlay" class="icons">
+                <img src="../resources/img/play-button.png">
+            </span>
+        </div>
+        <div class="next-song">
+            <span class="icons">
+                <img src="../resources/img/forward-button.png">
+            </span>
+        </div>
+        <div class="progress-bar-song" data-label="Progress bar">
+            <audio id="music-player" type="audio/mpeg">
+            </audio>
+            <p id="song-current-time">0:00</p>
+            <div class="progress-slider" id="progress-slider" style="cursor: pointer;">
+                <div class="progress" id="progress"></div>
+            </div>
+            <p id="song-length">0:00</p>
+        </div>
+        <div class="playing-song">
+            <a class="playing-song-details song-writers" href="artist.php"></a>
+            <p class="playing-song-details song-name"></p>
+        </div>
+        <div class="like-song">
+            <span class="icons">
+                <img src="../resources/img/heart_empty.png">
+            </span>
+        </div>
+    </div>
+</div>
