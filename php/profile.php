@@ -22,6 +22,8 @@ if (isset($_SESSION["id"])) {
     <link rel="stylesheet" href="../css/modal.css">
     <script src="../js/script.js" defer></script>
     <script src="../js/fetchUser.js" defer></script>
+    <script src="../js/fetchFavArtists.js" defer></script>
+    <script src="../js/displayPlaylist.js" defer></script>
     <title>Profile | SocialMusic</title>
 </head>
 
@@ -29,11 +31,10 @@ if (isset($_SESSION["id"])) {
 
     <div class="modal-container" id="modalContainer">
         <div class="modal">
-            <h1>Modal</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima vitae dolore eligendi non accusantium
-                voluptatibus sit cumque, natus facilis magnam aperiam animi dicta consectetur debitis sunt aliquam iure
-                nisi iusto.</p>
-            <button id="close-modal">Close modal</button>
+            <h1>Choose your favourite artists for this month (max. 3)</h1>
+            <div id="div-checkboxes" class="checkboxes">
+            </div>
+            <button id="close-modal">Confirm</button>
         </div>
     </div>
 
@@ -47,8 +48,7 @@ if (isset($_SESSION["id"])) {
                     <img class="banner-photo" src="../resources/img/banner.jpg" alt="">
                 </div>
                 <div class="profile-image">
-                <!-- <input type="file" accept=".jpg, .png"> -->
-                <img id="profile-img" class="profile-photo">
+                    <img id="profile-img" class="profile-photo" src="">
                 </div>
                 <div class="profile-details">
                     <div class="details">
@@ -81,24 +81,6 @@ if (isset($_SESSION["id"])) {
                             </div>
                             <div class="favourite-artists-list">
                                 <ol class="favourites-ol">
-                                    <li class="favourites-li">
-                                        <span class="favourite-image">
-                                            <img class="fav-img" src="../resources/img/tisoki-avatar.jpg" alt="">
-                                        </span>
-                                        <a class="favourite-name" href="artist.php">Tisoki</a>
-                                    </li>
-                                    <li class="favourites-li">
-                                        <span class="favourite-image">
-                                            <img class="fav-img" src="../resources/img/ghost-voices-image.jpg" alt="">
-                                        </span>
-                                        <a class="favourite-name" href="artist.php">ARTIST NAME</a>
-                                    </li>
-                                    <li class="favourites-li">
-                                        <span class="favourite-image">
-                                            <img class="fav-img" src="../resources/img/ghost-voices-image.jpg" alt="">
-                                        </span>
-                                        <a class="favourite-name" href="artist.php">ARTIST NAME</a>
-                                    </li>
                                 </ol>
                             </div>
                         </div>
@@ -113,35 +95,6 @@ if (isset($_SESSION["id"])) {
                             </div>
                             <div class="favourite-songs-list">
                                 <ol class="favourites-ol">
-                                    <li class="favourites-li">
-                                        <span class="favourite-image">
-                                            <img class="fav-img" src="../resources/img/ghost-voices-image.jpg" alt="">
-                                        </span>
-                                        <div class="about-fav flex flex-column justify-center">
-                                            <a class="favourite-name" href="artist.php">Virtual Self</a>
-                                            <p class="favourite-name">GHOST VOICES</p>
-                                        </div>
-                                    </li>
-                                    <li class="favourites-li"><span class="favourite-image">
-                                            <img class="fav-img" src="../resources/img/tisoki-miles-away.jpg" alt="">
-                                        </span>
-                                        <div class="about-fav flex flex-column justify-center">
-                                            <div class="writers">
-                                                <a class="song-writers favourite-name" href="artist.php">Tisoki<span style="margin: 0; color: black">&#44;</span>
-                                                </a>
-                                                <a class="song-writers favourite-name" href="artist.php">Leotrix</a>
-                                            </div>
-                                            <p class="favourite-name">Miles Away</p>
-                                        </div>
-                                    </li>
-                                    <li class="favourites-li"><span class="favourite-image">
-                                            <img class="fav-img" src="../resources/img/ghost-voices-image.jpg" alt="">
-                                        </span>
-                                        <div class="about-fav flex flex-column justify-center">
-                                            <a class="favourite-name" href="artist.php">ARTIST NAME</a>
-                                            <p class="favourite-name">SONG NAME</p>
-                                        </div>
-                                    </li>
                                 </ol>
                             </div>
                         </div>
@@ -156,31 +109,6 @@ if (isset($_SESSION["id"])) {
                             </div>
                             <div class="favourite-albums-list">
                                 <ol class="favourites-ol">
-                                    <li class="favourites-li">
-                                        <span class="favourite-image">
-                                            <img class="fav-img" src="../resources/img/tisoki-album.jpg" alt="">
-                                        </span>
-                                        <div class="about-fav flex flex-column justify-center fav-albums">
-                                            <a class="favourite-name" href="artist.php">Tisoki</a>
-                                            <a class="favourite-name" href="album.php" style="font-size: 24px;">01953</a>
-                                        </div>
-                                    </li>
-                                    <li class="favourites-li"><span class="favourite-image">
-                                            <img class="fav-img" src="../resources/img/ghost-voices-image.jpg" alt="">
-                                        </span>
-                                        <div class="about-fav flex flex-column justify-center fav-albums">
-                                            <a class="favourite-name" href="artist.php">ARTIST NAME</a>
-                                            <a class="favourite-name" href="album.php" style="font-size: 24px;">ALBUM NAME</a>
-                                        </div>
-                                    </li>
-                                    <li class="favourites-li"><span class="favourite-image">
-                                            <img class="fav-img" src="../resources/img/ghost-voices-image.jpg" alt="">
-                                        </span>
-                                        <div class="about-fav flex flex-column justify-center fav-albums">
-                                            <a class="favourite-name" href="artist.php">ARTIST NAME</a>
-                                            <a class="favourite-name" href="album.php" style="font-size: 24px;">ALBUM NAME</a>
-                                        </div>
-                                    </li>
                                 </ol>
                             </div>
                         </div>

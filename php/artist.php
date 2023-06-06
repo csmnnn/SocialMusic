@@ -11,6 +11,7 @@ require('requireLogin.php');
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/modal.css">
     <script src="../js/script.js" defer></script>
+    <script src="../js/displayPlaylist.js" defer></script>
     <title>Artist name | SocialMusic</title>
 </head>
 
@@ -32,15 +33,15 @@ require('requireLogin.php');
             <?php include '../html/music-player.html'; ?>
             <div class="profile">
                 <div class="profile-banner">
-                    <img class="banner-photo" src="../resources/img/profile-banner.jpg" alt="">
+                    <img class="banner-photo" src="../resources/img/banner.jpg" alt="">
                 </div>
                 <div class="profile-image">
-                    <img class="profile-photo" src="../resources/img/tisoki-avatar.jpg">
+                    <img class="profile-photo" src="../resources/img/profile_picture.png">
                 </div>
                 <div class="profile-details">
                     <div class="details">
-                        <p class="details-p">Tisoki</p>
-                        <p class="details-p" style="margin-bottom: 20px;">@tisoki</p>
+                        <p class="details-p"></p>
+                        <p class="details-p" style="margin-bottom: 20px;"></p>
                     </div>
                 </div>
                 <hr>
@@ -49,75 +50,6 @@ require('requireLogin.php');
                         <h1 class="heading">Top songs</h1>
                         <div class="top-songs flex justify-center">
                             <ul class="flex align-start flex-column list">
-                                <li class="top-songs-list-item">
-                                    <div class="div-list-item flex">
-                                        <div class="img">
-                                            <img src="../resources/img/tisoki-miles-away.jpg" alt="">
-                                        </div>
-                                        <div class="top-song-name flex align-center">
-                                            <p class="songs song-title">Miles Away</p>
-                                        </div>
-                                        <div class="top-song-like flex align-center justify-center">
-                                            <img src="../resources/img/heart_empty.png" alt="">
-                                        </div>
-                                        <div class="top-song-length flex align-center justify-center">2:30</div>
-                                    </div>
-                                </li>
-                                <li class="top-songs-list-item">
-                                    <div class="div-list-item flex">
-                                        <div class="img">
-                                            <img src="../resources/img/ghost-voices-image.jpg" alt="">
-                                        </div>
-                                        <div class="top-song-name flex align-center">
-                                            <p class="songs song-title">GHOST VOICES (TISOKI FLIP)</p>
-                                        </div>
-                                        <div class="top-song-like flex align-center justify-center">
-                                            <img src="../resources/img/heart_empty.png" alt="">
-                                        </div>
-                                        <div class="top-song-length flex align-center justify-center">2:06</div>
-                                    </div>
-                                </li>
-                                <li class="top-songs-list-item">
-                                    <div class="div-list-item flex">
-                                        <div class="img"><img src="../resources/img/tisoki-album.jpg" alt="">
-                                        </div>
-                                        <div class="top-song-name flex align-center">
-                                            <p class="songs song-title">HOLD ON ME</p>
-                                        </div>
-                                        <div class="top-song-like flex align-center justify-center">
-                                            <img src="../resources/img/heart_empty.png" alt="">
-                                        </div>
-                                        <div class="top-song-length flex align-center justify-center">2:08</div>
-                                    </div>
-                                </li>
-                                <li class="top-songs-list-item">
-                                    <div class="div-list-item flex">
-                                        <div class="img">
-                                            <img src="../resources/img/ghost-voices-image.jpg" alt="">
-                                        </div>
-                                        <div class="top-song-name flex align-center">
-                                            <p class="songs song-title">Song name</p>
-                                        </div>
-                                        <div class="top-song-like flex align-center justify-center">
-                                            <img src="../resources/img/heart_empty.png" alt="">
-                                        </div>
-                                        <div class="top-song-length flex align-center justify-center">1:00</div>
-                                    </div>
-                                </li>
-                                <li class="top-songs-list-item">
-                                    <div class="div-list-item flex">
-                                        <div class="img">
-                                            <img src="../resources/img/ghost-voices-image.jpg" alt="">
-                                        </div>
-                                        <div class="top-song-name flex align-center">
-                                            <p class="songs song-title">Song name</p>
-                                        </div>
-                                        <div class="top-song-like flex align-center justify-center">
-                                            <img src="../resources/img/heart_empty.png" alt="">
-                                        </div>
-                                        <div class="top-song-length flex align-center justify-center">1:00</div>
-                                    </div>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -132,30 +64,6 @@ require('requireLogin.php');
                                 <div class="tab-content flex align-center">
                                     <button class="btn-act">&larr;</button>
                                     <div class="tab-singles">
-                                        <div class="discover-song flex flex-column align-center">
-                                            <div class="discover-song-img">
-                                                <img src="../resources/img/tisoki-miles-away.jpg" alt="">
-                                            </div>
-                                            <p class="songs song-title">Miles Away</p>
-                                        </div>
-                                        <div class="discover-song flex flex-column align-center">
-                                            <div class="discover-song-img">
-                                                <img src="../resources/img/ghost-voices-image.jpg" alt="">
-                                            </div>
-                                            <p class="songs song-title">GHOST VOICES (...</p>
-                                        </div>
-                                        <div class="discover-song flex flex-column align-center">
-                                            <div class="discover-song-img">
-                                                <img src="../resources/img/tisoki-album.jpg" alt="">
-                                            </div>
-                                            <a class="songs song-title" href="album.php">01953</a>
-                                        </div>
-                                        <div class="discover-song flex flex-column align-center">
-                                            <div class="discover-song-img">
-                                                <img src="../resources/img/ghost-voices-image.jpg" alt="">
-                                            </div>
-                                            <p class="songs song-title">Song name</p>
-                                        </div>
                                     </div>
                                     <button class="btn-act">&rarr;</button>
                                 </div>

@@ -2,13 +2,13 @@
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $mysqli = require __DIR__ . "/database.php";
 
-    $sql = sprintf("SELECT * FROM user
-            WHERE email = '%s'",
-            $mysqli->real_escape_string($_POST["email"]));
+    $sql = sprintf("SELECT * FROM user WHERE email = '%s'", $mysqli->real_escape_string($_POST["email"]));
 
     $result = $mysqli->query($sql);
 
     $user = $result->fetch_assoc();
+    $passwordIncorect = array("errorMessage" => "Password incorrect");
+    $invalidEmail = array("errorMessage" => "Could not find an user with specified email");
 
     if ($user) {
         if (password_verify($_POST["password"], $user["password"])) {
@@ -18,9 +18,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $_SESSION = $user;
             header('Location: index.php');
             exit;
-        } else
-            echo "Password incorrect.";
+        } else {
+            exit($passwordIncorect["errorMessage"]);
+        }
     } else {
-        echo "You need to enter your credentials.";
+        exit($invalidEmail["errorMessage"]);
     }
 }

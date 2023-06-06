@@ -14,6 +14,9 @@ require('requireLogin.php');
     <title>SocialMusic</title>
     <script src="../js/script.js" defer></script>
     <script src="../js/fetchAll.js" defer></script>
+    <script src="../js/displaySuggestions.js"></script>
+    <script src="../js/displayPlaylist.js" defer></script>
+    <script src="../js/displayPlaylistHomepage.js" defer></script>
 </head>
 
 <body>
@@ -40,37 +43,7 @@ require('requireLogin.php');
                     <div class="heading-section">
                         <p class="section-name"><strong>Suggestions</strong></p>
                     </div>
-                    <div class="playlist">
-                        <div class="playlist-item">
-                            <div class="playlist-image">
-                                <img class="playlist-image" src="../resources/img/ghost-voices-image.jpg" alt="">
-                            </div>
-                            <a class="song-writers" href="artist.php">Artist</a>
-                            <p class="songs song-title">Song name</p>
-                        </div>
-                        <div class="playlist-item">
-                            <div class="playlist-image">
-                                <img class="playlist-image" src="../resources/img/ghost-voices-image.jpg" alt="">
-                            </div>
-                            <div class="playlist-name">
-                                <p class="playlist-name">Playlist name</p>
-                            </div>
-                        </div>
-                        <div class="playlist-item">
-                            <div class="playlist-image">
-                                <img class="playlist-image" src="../resources/img/ghost-voices-image.jpg" alt="">
-                            </div>
-                            <a class="song-writers" href="artist.php">Artist</a>
-                            <p class="songs song-title">Song name</p>
-                        </div>
-                        <div class="playlist-item">
-                            <div class="playlist-image">
-                                <img class="playlist-image" src="../resources/img/ghost-voices-image.jpg" alt="">
-                            </div>
-                            <div class="playlist-name">
-                                <p class="playlist-name">Playlist name</p>
-                            </div>
-                        </div>
+                    <div id="div-suggestion" class="playlist">
                     </div>
                 </div>
                 <hr>
@@ -78,42 +51,7 @@ require('requireLogin.php');
                     <div class="heading-section">
                         <p class="section-name"><strong>Your playlists</strong></p>
                     </div>
-                    <div class="playlist">
-                        <div class="playlist-item">
-                            <div class="playlist-image">
-                                <img class="playlist-image" src="../resources/img/ghost-voices-image.jpg" alt="">
-                                <div class="circle" id="circle">
-                                    <img class="img-test-icon" src="../resources/img/play-button.png" alt="">
-                                </div>
-                            </div>
-                            <div class="playlist-name">
-                                <p class="playlist-name">Playlist name</p>
-                            </div>
-                        </div>
-                        <div class="playlist-item">
-                            <div class="playlist-image">
-                                <img class="playlist-image" src="../resources/img/ghost-voices-image.jpg" alt="">
-                            </div>
-                            <div class="playlist-name">
-                                <p class="playlist-name">Playlist name</p>
-                            </div>
-                        </div>
-                        <div class="playlist-item">
-                            <div class="playlist-image">
-                                <img class="playlist-image" src="../resources/img/ghost-voices-image.jpg" alt="">
-                            </div>
-                            <div class="playlist-name">
-                                <p class="playlist-name">Playlist name</p>
-                            </div>
-                        </div>
-                        <div class="playlist-item">
-                            <div class="playlist-image">
-                                <img class="playlist-image" src="../resources/img/ghost-voices-image.jpg" alt="">
-                            </div>
-                            <div class="playlist-name">
-                                <p class="playlist-name">Playlist name</p>
-                            </div>
-                        </div>
+                    <div id="playlists-home" class="playlist">
                     </div>
                 </div>
             </div>

@@ -11,6 +11,9 @@ require('requireLogin.php');
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/modal.css">
     <script src="../js/script.js" defer></script>
+    <script src="../js/fetchSong.js" defer></script>
+    <script src="../js/displayDate.js" defer></script>
+    <script src="../js/displayPlaylist.js" defer></script>
     <title>Discover | SocialMusic</title>
 </head>
 
@@ -33,67 +36,11 @@ require('requireLogin.php');
             <?php include '../html/music-player.html'; ?>
             <div class="homepage-feed">
                 <div class="flex align-center">
-                    <h1 class="heading">Discover Daily | dd.mm.yyyy</h1>
+                    <h1 id="h1-discover" class="heading">Discover Daily | dd.mm.yyyy</h1>
                     <button type="button" class="add-playlist">Add to your playlists</button>
                 </div>
                 <hr>
                 <div class="discover-songs-container">
-                    <div class="discover-song flex flex-column align-center">
-                        <div class="discover-song-img">
-                            <img src="../resources/img/ghost-voices-image.jpg" alt="">
-                        </div>
-                        <a class="song-writers" href="artist.php">Artist</a>
-                        <p class="songs song-title">Song name</p>
-                    </div>
-                    <div class="discover-song flex flex-column align-center">
-                        <div class="discover-song-img">
-                            <img src="../resources/img/ghost-voices-image.jpg" alt="">
-                        </div>
-                        <a class="song-writers" href="artist.php">Artist</a>
-                        <p class="songs song-title">Song name</p>
-                    </div>
-                    <div class="discover-song flex flex-column align-center">
-                        <div class="discover-song-img">
-                            <img src="../resources/img/ghost-voices-image.jpg" alt="">
-                        </div>
-                        <a class="song-writers" href="artist.php">Artist</a>
-                        <p class="songs song-title">Song name</p>
-                    </div>
-                    <div class="discover-song flex flex-column align-center">
-                        <div class="discover-song-img">
-                            <img src="../resources/img/ghost-voices-image.jpg" alt="">
-                        </div>
-                        <a class="song-writers" href="artist.php">Artist</a>
-                        <p class="songs song-title">Song name</p>
-                    </div>
-                    <div class="discover-song flex flex-column align-center">
-                        <div class="discover-song-img">
-                            <img src="../resources/img/ghost-voices-image.jpg" alt="">
-                        </div>
-                        <a class="song-writers" href="artist.php">Artist</a>
-                        <p class="songs song-title">Song name</p>
-                    </div>
-                    <div class="discover-song flex flex-column align-center">
-                        <div class="discover-song-img">
-                            <img src="../resources/img/ghost-voices-image.jpg" alt="">
-                        </div>
-                        <a class="song-writers" href="artist.php">Artist</a>
-                        <p class="songs song-title">Song name</p>
-                    </div>
-                    <div class="discover-song flex flex-column align-center">
-                        <div class="discover-song-img">
-                            <img src="../resources/img/ghost-voices-image.jpg" alt="">
-                        </div>
-                        <a class="song-writers" href="artist.php">Artist</a>
-                        <p class="songs song-title">Song name</p>
-                    </div>
-                    <div class="discover-song flex flex-column align-center">
-                        <div class="discover-song-img">
-                            <img src="../resources/img/ghost-voices-image.jpg" alt="">
-                        </div>
-                        <a class="song-writers" href="artist.php">Artist</a>
-                        <p class="songs song-title">Song name</p>
-                    </div>
                 </div>
             </div>
         </div>
